@@ -72,5 +72,6 @@ model Transferencia {
 model Admin {
   adm_id Int @id @unique @default(autoincrement())
   adm_nome String
+  adm_senha String
   adm_acesso Int
 }
