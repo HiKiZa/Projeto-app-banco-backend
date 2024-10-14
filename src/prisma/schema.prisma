@@ -68,3 +68,9 @@ model Transferencia {
   destinatario       Conta    @relation("Destinatario", fields: [trans_destinatario], references: [con_id])
   remetente          Conta    @relation("Remetente", fields: [trans_remetente], references: [con_id])
 }
+
+model Admin {
+  adm_id Int @id @unique @default(autoincrement())
+  adm_nome String
+  adm_acesso Int
+}
